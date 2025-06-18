@@ -1,0 +1,145 @@
+* {
+  margin: none;
+  padding: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-regular {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #727272;
+}
+.btn {
+  width: 11.25rem;
+  height: 4rem;
+  background-color: #ff900e;
+  color: #ffffff;
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 8px;
+}
+body {
+  max-width: 1920px;
+  height: auto;
+  font-family: "Work Sans", sans-serif;
+}
+/* common style ends here */
+/* ====================================================== */
+/* header style */
+header {
+  width: 1920px;
+  background-color: hsla(32, 100%, 53%, 10%);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.1rem 15rem;
+}
+.name {
+  font-size: 2.81rem;
+  font-weight: bold;
+}
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+/* banner style */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner.button {
+  display: block;
+  margin: 0 auto;
+}
+.banner img {
+  padding-top: 3.1rem;
+  padding-bottom: 2.8rem;
+}
+.brand {
+  width: 53.875rem;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 3.1rem;
+}
+.brand h1 {
+  font-size: 4rem;
+}
+.brand h1,
+.brand p {
+  text-align: center;
+}
+
+/* ===================================================== */
+/* responsive for mobile phone */
+@media screen and (max-width: 425px) {
+  body {
+    max-width: 100%;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .brand {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .brand h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 8rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+}
