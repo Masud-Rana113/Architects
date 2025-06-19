@@ -28,6 +28,9 @@ body {
   height: auto;
   font-family: "Work Sans", sans-serif;
 }
+main {
+  margin-bottom: 130px;
+}
 /* common style ends here */
 /* ====================================================== */
 /* header style */
@@ -237,6 +240,39 @@ nav ul li a {
 }
 
 /* sponsor section */
+.sponsor-section {
+  margin: 0 240px;
+}
+.sponsor-head {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 500px;
+}
+.sponsor-head h3 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 800;
+  color: #131313;
+}
+.sponsor {
+  display: flex;
+  justify-content: space-between;
+  filter: grayscale(100%);
+}
+/* footer style */
+.footer {
+  background-color: hsla(32, 100%, 53%, 10%);
+  margin: 0 240px;
+  height: 50px;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 130px;
+  border-radius: 8px;
+}
+.footer p {
+  color: #424242;
+}
 /* ===================================================== */
 /* responsive for mobile phone */
 
@@ -381,5 +417,25 @@ nav ul li a {
   .f-card h1 {
     font-size: 25px;
     padding: 0;
+  }
+  /* sponsor section responsive */
+  .sponsor-section {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .sponsor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .sponsor-head {
+    width: 425px;
+  }
+  .footer {
+    margin: 0;
+  }
+  .footer p {
+    font-size: 12px;
+    margin: 20px auto;
   }
 }
